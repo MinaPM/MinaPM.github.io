@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+
+  <title>Solutions</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link id="rtlstyleSheet" rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous"
+    disabled>
+
+  <link id="ltrstyleSheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body style="  margin: 0px;
+padding-top: 0px;
+background-image: linear-gradient(45deg, #000a1f, rgb(0, 31, 77));  
+overflow: overlay;">
+  <style>
+    /**************custom list*******************/
+    .list-wrapper {
+      position: relative;
+    }
+
+    .list-item-wrapper {
+      position: relative;
+    }
+
+    .list-bullet {
+      margin-top: 10px;
+      background: white;
+      height: 10px;
+      width: 10px;
+      line-height: 10px;
+      border-radius: 100px;
+      color: white;
+      text-align: center;
+
+
+    }
+
+    body[dir=rtl] .list-bullet {
+      float: right;
+      margin-left: 20px;
+    }
+
+    body[dir=ltr] .list-bullet {
+      float: left;
+      margin-right: 20px;
+
+    }
+
+    .list-item {
+      display: table-row;
+      vertical-align: middle;
+    }
+
+    .white-line {
+      position: absolute;
+      background-color: white;
+      width: 2px;
+      height: calc(100% - 10px);
+      top: 10px;
+      border-radius: 100px;
+    }
+
+    body[dir=rtl] .white-line {
+      direction: rtl;
+      right: 4px;
+    }
+
+    body[dir=ltr] .white-line {
+      direction: ltr;
+      left: 4px;
+    }
+  </style>
+
+  <div id="nav-placeholder"></div>
+  <div class="p-5 d-md-flex justify-content-center mx-auto mt-5 " style="max-width: 1080px;">
+
+    <div class=" p-3 me-4 mb-4"
+      style="width: 100px; height: 100px; min-width: 100px; border-radius: 10px; border: 2px solid white;">
+      <img class="m-auto" src="merchantAsset.svg" style="object-fit: scale-down;">
+    </div>
+
+    <div class="list-wrapper text-white ">
+
+      <div class="white-line"></div>
+
+      <div class="list-item-wrapper">
+        <div class="list-bullet"></div>
+        <div class="list-item">
+          <h1 id="merchantHeader" class="fw-bold">Merchant Solution</h1>
+        </div>
+      </div>
+
+
+      <div class="list-item-wrapper">
+        <div class="list-bullet"></div>
+        <div class="list-item">
+          <h5>
+            A cloud based easy to use, clear and simple technology solution that help them better run their small business
+          </h5>
+        </div>
+      </div>
+
+
+      <div class="list-item-wrapper">
+        <div class="list-bullet"></div>
+        <div class="list-item">
+          <h2 class="fw-bold">Key Features</h2>
+        </div>
+      </div>
+
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Multiplatform – Native Solution for PC, Android</h5>
+      </div></div>
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Manage Inventory, Vendors and Home Delivery in one place </h5>
+      </div></div>
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Ease of use, Bilingual and Adaptable</h5>
+      </div></div>
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Automatic Updates via the cloud</h5>
+      </div></div>
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>24/7 Support </h5>
+      </div></div>
+      
+
+
+
+
+    </div>
+
+
+  </div>
+
+  <hr class="w-75 text-white mx-auto border-1 rounded  opacity-75" style=" height: 2px; ">
+
+  <div class="p-5  d-md-flex justify-content-center mx-auto " style="max-width: 1080px;">
+
+    <div class="p-3 me-4 mb-4 "
+      style="width: 100px; height: 100px; min-width: 100px; border-radius: 10px; border: 2px solid white;">
+      <img class="m-auto" src="analyticsAsset.svg" style="object-fit: scale-down;">
+    </div>
+
+    <div class="list-wrapper text-white ">
+
+      <div class="white-line"></div>
+
+      <div class="list-item-wrapper">
+        <div class="list-bullet"></div>
+        <div class="list-item">
+          <h1 id="analyticsHeader" class="fw-bold">Analytics Solution</h1>
+        </div>
+      </div>
+
+
+      <div class="list-item-wrapper">
+        <div class="list-bullet"></div>
+        <div class="list-item">
+          <h5>
+            Integrate large data sets harvested at multiple touch points to develop actionable insights that support their decision making
+          </h5>
+        </div>
+      </div>
+
+
+      <div class="list-item-wrapper">
+        <div class="list-bullet"></div>
+        <div class="list-item">
+          <h2 class="fw-bold">Key Features</h2>
+        </div>
+      </div>
+
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Subscription Model to Core Reports</h5>
+      </div></div>
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Option to Customize Reporting to suit all levels of the organization</h5>
+      </div></div>
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Real Time Delivery of Data and Dashboard</h5>
+      </div></div>
+      <div class="list-item-wrapper"><div class="list-bullet"></div><div class="list-item">
+          <h5>Dedicated Account Manager for Adhoc Requests and Bespoke Analysis</h5>
+      </div></div>
+     
+      
+
+
+
+
+    </div>
+
+
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("navBar.html");
+      $("#footer-placeholder").load("footer.html");
+    });
+
+    var language = {
+      en: {
+        analyticsHeader: "Analytics Solution",
+        merchantHeader: "Merchant Solution"
+      },
+      ar: {
+        analyticsHeader: "ميزة الباحثين",
+        merchantHeader: "ميزة التجار"
+      }
+    };
+
+    function setLanguageAR() {
+
+      //begin changing strings
+      analyticsHeader.textContent = language.ar.analyticsHeader;
+      merchantHeader.textContent = language.ar.merchantHeader;
+    }
+
+    function setLanguageEN() {
+
+
+      //begin changing strings
+      analyticsHeader.textContent = language.en.analyticsHeader;
+      merchantHeader.textContent = language.en.merchantHeader;
+    }
+
+
+  </script>
+
+</body>
+
+</html>
