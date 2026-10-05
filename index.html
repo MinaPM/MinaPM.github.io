@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mina Messad | Software Engineer & Researcher</title>
+  <meta name="description"
+    content="Portfolio of Mina Messad - Software Engineer and Systems Researcher specializing in High-Performance Systems, Applied Cryptography, Full-Stack Architecture, and WebAssembly." />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mina Messad | Software Engineer & Researcher" />
+  <meta property="og:description"
+    content="Software Engineer & Researcher in Jersey City, NJ. Specialized in Rust, C++, Python, WebAssembly, and High-Performance Distributed Systems." />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-monogram">MM</span>
+        <span class="brand-name">Mina Messad</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link nav-cta">Get in Touch</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section container">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="pulse-dot"></span>
+          <span>Open to Software Engineering & Systems Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering resilient systems, <br />
+          <span class="text-gradient">high-performance algorithms</span> & robust web platforms.
+        </h1>
+
+        <p class="hero-subtitle">
+          I am <strong>Mina Messad</strong>, a Software Engineer & Researcher based in
+          <strong>Jersey City, NJ</strong>. Specializing in low-level systems engineering (Rust, C++),
+          WebAssembly, applied cryptography, and scalable full-stack architectures.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M7 17l9.2-9.2M17 17V7H7" />
+            </svg>
+          </a>
+          <a href="https://eprint.iacr.org/2025/1539.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline">
+            <span>Read Research Paper</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <button class="btn btn-glass copy-email-btn" data-email="mina.messad10@gmail.com" title="Click to copy email">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span class="copy-text">Copy Email</span>
+          </button>
+        </div>
+
+        <div class="social-links-bar">
+          <a href="https://github.com/MinaPM" target="_blank" rel="noopener noreferrer" class="social-badge"
+            title="GitHub Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            <span>github.com/MinaPM</span>
+          </a>
+
+          <a href="https://linkedin.com/in/mina-messad" target="_blank" rel="noopener noreferrer" class="social-badge"
+            title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            <span>linkedin.com/in/mina-messad</span>
+          </a>
+
+          <a href="mailto:mina.messad10@gmail.com" class="social-badge" title="Send an email">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>mina.messad10@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Spotlight Card -->
+    <section class="container spotlight-container" id="about">
+      <div class="spotlight-card">
+        <div class="spotlight-badge">Featured Cryptography Research</div>
+        <div class="spotlight-inner">
+          <div class="spotlight-text">
+            <h3>Fault-Tolerant Cryptographic Matrix Cipher</h3>
+            <p class="spotlight-venue">New Jersey Institute of Technology • IACR Cryptology ePrint Archive</p>
+            <p class="spotlight-desc">
+              Engineered a novel fault-tolerant encryption cipher in <strong>Rust</strong> exploiting probabilistic data
+              structures to achieve resilience against data corruption that would normally cause AES-GCM to
+              catastrophically fail. Replaced linearly scaling ciphertexts with a highly compressed Bloom filter matrix
+              and developed a BFS-based decryption tree-search recovering plaintext through HMAC chains over degraded
+              channels.
+            </p>
+            <div class="spotlight-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">Applied Cryptography</span>
+              <span class="tag">Bloom Filter Matrix</span>
+              <span class="tag">BFS Tree Search</span>
+              <span class="tag">HMAC Validation</span>
+            </div>
+          </div>
+          <div class="spotlight-cta">
+            <a href="https://eprint.iacr.org/2025/1539.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary">
+              <span>View Publication</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Projects & Systems</h2>
+        <p class="section-desc">
+          Low-latency algorithms, interactive WebAssembly applications, microgrid serialization, and production-grade
+          architectures.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="systems">Systems & WebAssembly</button>
+        <button class="filter-tab" data-filter="web">Full-Stack & APIs</button>
+        <button class="filter-tab" data-filter="research">Research & Protocols</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Sorting Algorithm Visualizer -->
+        <article class="project-card" data-category="systems">
+          <div class="project-card-top">
+            <span class="project-type-indicator">WebAssembly & Interactive Graphics</span>
+          </div>
+
+          <h3 class="project-name">Sorting Algorithm Visualizer</h3>
+          <p class="project-summary">
+            High-performance interactive visualizer built in <strong>C++17 and SDL2</strong>, compiled to
+            <strong>WebAssembly via Emscripten</strong> for near-native in-browser execution with zero JS backend
+            simulation.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Animates 10+ algorithms (QuickSort, MergeSort, HeapSort, RadixSort) live at a solid 60 FPS on 1,000+
+              element datasets.</li>
+            <li>Optimized SDL rendering pipeline via batched draw calls, cache-friendly data layouts, and decoupled
+              simulation/render loops.</li>
+            <li>Engineered custom web shell (HTML/CSS/JS) bridging WASM memory to browser UI.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">C++17</span>
+            <span class="tag">WebAssembly</span>
+            <span class="tag">SDL2</span>
+            <span class="tag">Emscripten</span>
+            <span class="tag">CMake</span>
+          </div>
+
+          <div class="project-footer-actions">
+            <a href="https://minapm.github.io/sorting-algorithms-visualizer/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-primary">Live Website</a>
+            <a href="https://github.com/MinaPM/sorting-algorithms-visualizer" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-outline">Source Code</a>
+          </div>
+        </article>
+
+        <!-- Project 2: Full-Stack FastAPI Calculator & Auth Suite -->
+        <article class="project-card" data-category="web">
+          <div class="project-card-top">
+            <span class="project-type-indicator">Full-Stack & Cloud Architecture</span>
+          </div>
+
+          <h3 class="project-name">Production FastAPI Platform & Test Suite</h3>
+          <p class="project-summary">
+            Enterprise-grade REST API backend with user-isolated computational engine, JWT & Redis session security, and
+            full automated 3-tier testing (92% coverage).
+          </p>
+
+          <ul class="project-highlights">
+            <li>15+ endpoints implementing full BREAD operations, factory/strategy patterns, and PostgreSQL ORM mapping.
+            </li>
+            <li>JWT access/refresh tokens with bcrypt hashing, OAuth2 bearer validation, and Redis-backed token
+              revocation across distributed workers.</li>
+            <li>Hardened container deployment: multi-worker Uvicorn, Docker Compose, non-root execution, Playwright E2E,
+              and zero vulnerabilities via pip-audit.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Python</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Playwright</span>
+          </div>
+
+          <div class="project-footer-actions">
+            <a href="https://github.com/MinaPM/NJIT-IS601-Final-Project" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-primary">GitHub Repository</a>
+          </div>
+        </article>
+
+        <!-- Project 3: Universal Gem Puzzle Solver -->
+        <article class="project-card" data-category="systems">
+          <div class="project-card-top">
+            <span class="project-type-indicator">Algorithms & WebAssembly</span>
+          </div>
+
+          <h3 class="project-name">Universal Gem Puzzle Solver</h3>
+          <p class="project-summary">
+            Optimal N × N sliding puzzle solver in C++ leveraging an <strong>A* search engine</strong>, binary min-heap
+            priority queue, and live WebAssembly frontier visualization.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Evaluates admissible heuristics (Manhattan distance, linear conflict, misplaced tiles) with benchmarked
+              node expansions.</li>
+            <li>Solvability detection via inversion count parity to mathematically skip unsolvable states prior to
+              search.</li>
+            <li>Visualizes live search frontier in SDL2 compiled to WASM via parent-pointer backtracking.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">A* Search</span>
+            <span class="tag">Graph Heuristics</span>
+            <span class="tag">WebAssembly</span>
+            <span class="tag">SDL2</span>
+          </div>
+
+          <div class="project-footer-actions">
+            <a href="https://github.com/MinaPM/GemPuzzle" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-primary">GitHub Repository</a>
+          </div>
+        </article>
+
+        <!-- Project 4: CheckMate Platform -->
+        <article class="project-card" data-category="web">
+          <div class="project-card-top">
+            <span class="project-type-indicator">Enterprise Resource Platform</span>
+          </div>
+
+          <h3 class="project-name">CheckMate - Multi-Tenant Inventory & Resource Hub</h3>
+          <p class="project-summary">
+            Multi-tenant inventory platform serving university organizations, featuring 4-tier Role-Based Access Control
+            (Admin, Manager, Organizer, User) and automated onboarding pipelines.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Designed RESTful API with full OpenAPI documentation covering inventory CRUD, order routing, and event
+              reservations.</li>
+            <li>Built CSV ingestion pipeline that slashed bulk onboarding from hours down to under a minute.</li>
+            <li>Engineered audit logging tracking every tenant mutation for complete traceability and compliance.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">REST API</span>
+            <span class="tag">OpenAPI</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">Data Modeling</span>
+          </div>
+
+          <div class="project-footer-actions">
+            <a href="https://github.com/WokFriedE/CheckMate.git" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-primary">GitHub Repository</a>
+          </div>
+        </article>
+
+        <!-- Project 5: Open-Source CTS Microgrid -->
+        <article class="project-card" data-category="research">
+          <div class="project-card-top">
+            <span class="project-type-indicator">Open Source & Binary Protocols</span>
+          </div>
+
+          <h3 class="project-name">Energy Mashup Lab CTS (Microgrid Serialization)</h3>
+          <p class="project-summary">
+            Redesigned wire serialization for smart energy microgrids, replacing JSON with <strong>Simple Binary
+              Encoding (SBE)</strong> to achieve ultra-low latency exchange.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Cut platform memory overhead by 30-50% and boosted overall system transaction throughput.</li>
+            <li>Facilitated sub-millisecond data exchanges between generating, control, and consuming devices.</li>
+            <li>Contributed directly to open-source smart grid software interoperability standards.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">Simple Binary Encoding</span>
+            <span class="tag">Distributed Systems</span>
+            <span class="tag">Microgrids</span>
+            <span class="tag">Protocols</span>
+            <span class="tag">Open Source</span>
+          </div>
+
+          <div class="project-footer-actions">
+            <a href="https://github.com/EnergyMashupLab/eml-cts" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-primary">GitHub Repository</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-desc">Track record of building production software, research architectures, and scalable UI
+          systems.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Role 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Software Engineer, Researcher</h3>
+                <div class="role-company">New Jersey Institute of Technology</div>
+              </div>
+              <div class="role-meta">
+                <span class="role-date">Sep 2026 – Present</span>
+                <span class="role-loc">Newark, NJ</span>
+              </div>
+            </div>
+            <p class="role-desc">
+              Leading novel cryptographic design and storage optimization research published in IACR ePrint.
+            </p>
+            <ul class="role-bullets">
+              <li>Engineered a highly fault-tolerant encryption cipher in Rust, exploiting probabilistic data structures
+                to achieve resilience against data corruption that would normally cause AES-GCM to catastrophically
+                fail.</li>
+              <li>Optimized multi-tenant storage architecture by replacing linearly scaling AES ciphertexts with a
+                single, highly compressed Bloom filter matrix.</li>
+              <li>Developed a BFS-based cryptographic decryption tree-search capable of recovering plaintext through
+                HMAC chain validation over degraded or noise-injected data structures.</li>
+            </ul>
+            <div class="role-links">
+              <a href="https://eprint.iacr.org/2025/1539.pdf" target="_blank" rel="noopener noreferrer"
+                class="link-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <span>IACR ePrint Paper (PDF)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Software Engineer</h3>
+                <div class="role-company">Energy Mashup Lab (Open-Source CTS Project)</div>
+              </div>
+              <div class="role-meta">
+                <span class="role-date">Feb 2025 – May 2025</span>
+                <span class="role-loc">Newark, NJ</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Redesigned message serialization for an open-source microgrid platform, replacing JSON with Simple
+                Binary Encoding (SBE).</li>
+              <li>Boosted platform throughput and cut memory usage by 30-50% through SBE-based binary serialization
+                design.</li>
+              <li>Enabled faster, lower-latency data exchange between energy generating, control, and consuming devices
+                in microgrid deployments.</li>
+            </ul>
+            <div class="role-links">
+              <a href="https://github.com/EnergyMashupLab/eml-cts" target="_blank" rel="noopener noreferrer"
+                class="link-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+                <span>eml-cts on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Software Engineer</h3>
+                <div class="role-company">Project Elevate</div>
+              </div>
+              <div class="role-meta">
+                <span class="role-date">Feb 2025 – May 2025</span>
+                <span class="role-loc">Newark, NJ</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Built Vue.js and PrimeVue interfaces for configuring, monitoring, and adjusting core AI models in real
+                time.</li>
+              <li>Designed dashboards visualizing model confidence scores and prediction drift, giving engineers instant
+                insight.</li>
+              <li>Architected a reusable Vue component library, standardizing how AI system data was rendered app-wide.
+              </li>
+              <li>Built no-code tools for testing model behavior, reducing iteration time and catching edge issues prior
+                to deployment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Full-Stack Developer</h3>
+                <div class="role-company">Kean University</div>
+              </div>
+              <div class="role-meta">
+                <span class="role-date">Jul 2022 – Aug 2022</span>
+                <span class="role-loc">Union, NJ</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Built a full-stack feedback portal (Vue.js, FastAPI, PostgreSQL) deployed for 500+ students to rate
+                and review IT support tickets.</li>
+              <li>Designed dynamic rating UI with free-text feedback, cutting form completion time by 40% versus legacy
+                processes.</li>
+              <li>Built REST APIs to validate, store, and route feedback data, enabling real-time aggregation for
+                internal service reviews.</li>
+              <li>Containerized with Docker for seamless staging and production releases, cutting triage time by 30%.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 5 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Software Developer</h3>
+                <div class="role-company">AJNA (Startup)</div>
+              </div>
+              <div class="role-meta">
+                <span class="role-date">Dec 2021 – Jul 2022</span>
+                <span class="role-loc">Remote</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Built responsive, production-grade web interfaces using HTML5, CSS3, and vanilla JavaScript, ensuring
+                cross-browser compatibility and sub-3s initial load times.</li>
+              <li>Engineered interactive dashboards with real-time data binding and DOM manipulation, optimizing
+                rendering performance through event delegation and minimal reflows.</li>
+              <li>Implemented modular, component-based UI architecture with reusable templates, enabling rapid feature
+                iteration and cutting CSS duplication by 45%.</li>
+              <li>Architected a cohesive design system and branding framework, establishing visual and technical
+                standards app-wide.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">Comprehensive toolkit spanning low-level systems programming to cloud full-stack
+          engineering.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="cat-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Python</span>
+            <span class="skill-chip primary">Rust</span>
+            <span class="skill-chip primary">C / C++</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">Bash</span>
+            <span class="skill-chip">Java</span>
+            <span class="skill-chip">C#</span>
+            <span class="skill-chip">Ruby</span>
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">PL/SQL</span>
+            <span class="skill-chip">Assembly</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="cat-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </span>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">FastAPI</span>
+            <span class="skill-chip primary">Vue.js</span>
+            <span class="skill-chip">React.js</span>
+            <span class="skill-chip">Next.js</span>
+            <span class="skill-chip">Spring Boot</span>
+            <span class="skill-chip">Rails</span>
+            <span class="skill-chip">NumPy</span>
+            <span class="skill-chip">Pandas</span>
+            <span class="skill-chip">SDL2</span>
+            <span class="skill-chip">Emscripten (WASM)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="cat-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+            </span>
+            <h3>Tools, Cloud & DevOps</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Docker</span>
+            <span class="skill-chip">Kubernetes</span>
+            <span class="skill-chip">Git / GitHub</span>
+            <span class="skill-chip">CI/CD Pipelines</span>
+            <span class="skill-chip">AWS</span>
+            <span class="skill-chip">Azure</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">GitHub Copilot</span>
+            <span class="skill-chip">Claude Code</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="cat-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </span>
+            <h3>Systems & Infrastructure</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Arch Linux</span>
+            <span class="skill-chip">KDE</span>
+            <span class="skill-chip">PipeWire</span>
+            <span class="skill-chip">NetworkManager</span>
+            <span class="skill-chip">GPU / Driver Troubleshooting</span>
+            <span class="skill-chip">Binary Protocols (SBE)</span>
+            <span class="skill-chip">Memory Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-category full-width">
+          <div class="skill-category-header">
+            <span class="cat-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </span>
+            <h3>Engineering Practices & Architecture</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Test-Driven Development (TDD)</span>
+            <span class="skill-chip">RESTful API Design</span>
+            <span class="skill-chip">Database Modeling</span>
+            <span class="skill-chip">Microservices & Multi-Tenancy</span>
+            <span class="skill-chip">Role-Based Access Control (RBAC)</span>
+            <span class="skill-chip">Cryptographic Protocols</span>
+            <span class="skill-chip">Agile Methodology</span>
+            <span class="skill-chip">Automated E2E Testing (Playwright)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Academics</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-year">Fall 2027</div>
+          <h3 class="edu-degree">Master of Science in Computer Science</h3>
+          <div class="edu-school">New Jersey Institute of Technology</div>
+          <div class="edu-location">Newark, NJ</div>
+          <div class="edu-gpa">GPA: <strong>3.69</strong></div>
+        </div>
+
+        <div class="edu-card highlight-border">
+          <div class="edu-year">May 2025</div>
+          <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+          <div class="edu-school">New Jersey Institute of Technology</div>
+          <div class="edu-location">Newark, NJ</div>
+          <div class="edu-gpa">GPA: <strong>3.64</strong> • <em>Cum Laude</em> • Dean's List</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="section container contact-section">
+      <div class="contact-card">
+        <div class="contact-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="contact-title">Ready to build something exceptional?</h2>
+          <p class="contact-desc">
+            Whether you are looking to collaborate on high-performance systems, discuss applied cryptography, or discuss
+            engineering roles, feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-details-grid">
+          <div class="contact-detail-box">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.8" fill="none">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="detail-label">Direct Email</div>
+            <a href="mailto:mina.messad10@gmail.com" class="detail-value">mina.messad10@gmail.com</a>
+            <button class="btn btn-sm btn-glass copy-email-btn" data-email="mina.messad10@gmail.com">
+              <span class="copy-text">Copy Email Address</span>
+            </button>
+          </div>
+
+          <div class="contact-detail-box">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </div>
+            <div class="detail-label">LinkedIn Profile</div>
+            <a href="https://linkedin.com/in/mina-messad" target="_blank" rel="noopener noreferrer"
+              class="detail-value">linkedin.com/in/mina-messad</a>
+            <a href="https://linkedin.com/in/mina-messad" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-outline">Connect on LinkedIn</a>
+          </div>
+
+          <div class="contact-detail-box">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </div>
+            <div class="detail-label">GitHub Profile</div>
+            <a href="https://github.com/MinaPM" target="_blank" rel="noopener noreferrer"
+              class="detail-value">github.com/MinaPM</a>
+            <a href="https://github.com/MinaPM" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-outline">Explore Repositories</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">Mina Messad</span>
+        <span class="footer-tagline">Systems, WebAssembly & Full-Stack Engineer</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast for copied email feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
